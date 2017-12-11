@@ -19,23 +19,13 @@ body {
     width: 80%;
     max-width: 80%;
 }
-@media(max-width: 500px){
-    body{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    color: #4f4f4f;
-    overflow-x: hidden;
-    letter-spacing: 1px;
-    }
-}
 a {
     color: #fff;
     text-decoration: none;
 }
 
 a:hover {
-    color: #102964;
+    color: #000;
 } 
 .img-responsive{
     width: 100%;
@@ -111,7 +101,7 @@ a:hover {
 .button{
     height: inherit;
     line-height: inherit;
-    padding: 10px;
+    padding: 0 5px;
     border-radius: 0;
     border: 1px solid #e7a515;
     color: #e7a515;
@@ -150,7 +140,7 @@ input::placeholder{
 }
 .nav{
     position: relative;
-    background-color: #3863A0;
+    background-color: #000;
     width: 100%;
     height: 70px;
     z-index: 999;
@@ -227,9 +217,6 @@ letter-spacing: -1px;
 
 }
 @media(max-width: 500px){
-    .top-image, .top-image-player{
-        display: none;
-    }
     .top-header{
         width: 100%;
     }
@@ -240,26 +227,25 @@ letter-spacing: -1px;
         height: 50px;
         top: -10px;
     }
-    .top-form input[type="search"]{
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        margin-bottom: 0;
-        width: 200px;
-        height: 50px;
-        background-color: #f2f2f2;  
-    }
 }
 .mobile-menu {
     display: none;
   }
   @media (max-width: 500px) {
+    .container{
+        width: 90%;
+        max-width: 90%;
+    }
+    .top-header{
+        position: relative;
+        width: 100%;
+        top: 100px;
+        /* left: -30px; */
+    }
     nav {
       height: 50px;
       line-height: 50px;
       top: 0;
-    }
-    nav .brand-logo img {
-      padding-top: 0;
     }
     nav ul {
       display: none;
@@ -313,7 +299,7 @@ letter-spacing: -1px;
     }
     .mobile-menu a {
       display: block;
-      color: #102659;
+      color: #000;
       text-align: center;
       /* margin-right: 30px; */
     }
@@ -383,13 +369,13 @@ letter-spacing: -1px;
 .crew-list figure figcaption{
     position: absolute;
     bottom: 0;
-    left: -20px;
+    left: -30px;
     width: 50px;
 }
 .crew-list figure figcaption.active-fig{
     position: absolute;
     bottom: 50px;
-    left: -20px;
+    left: -30px;
     width: 50px;
 }
 .cast-team ul{
@@ -411,7 +397,26 @@ letter-spacing: -1px;
     position: relative;
     color: #828282;
 }
+.story-images{
+    position: relative;
+}
 .sub-image{
     margin-top: -70px;
     margin-left: 30px;
+}
+.sup-image{
+    position: absolute;
+    right: -45px;
+    bottom: 150px;
+    width: 40%;
+    height: auto;
+}
+@media(max-width: 500px){
+    .sup-image{
+        position: absolute;
+        right: -35px;
+        bottom: 100px;
+        width: 40%;
+        height: auto;
+    }  
 }
