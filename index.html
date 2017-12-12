@@ -17,7 +17,12 @@
 <body>
     <section class="top">
         <div class="top-image">
-            <img src="images/background-image.png" alt="background-image.png">
+            <video id="top-video">
+                <source src="video/we-were-soldiers.mp4" type="video/mp4;codecs="avc1.42E01E, mp4a.40.2"">
+                <p>Your browser doesn't support HTML5 video. Here is a
+                    <a href="rabbit320.mp4">link to the video</a> instead.</p>
+            </video>
+            <img src="images/background-image.png" id="bg-image" alt="background-image.png">
         </div>
         <div class="container">
             <nav class="top-nav">
@@ -55,8 +60,9 @@
                 <h1>WE WERE SOLDIERS</h1>
                 <p>"The Vietnam generation has its own Saving Private Ryan in We Were Soldiers."</p>
                 <label class="quote-label">Matt Easterbrook</label>
-                <button class="button play-button margin-top-50">
-                    <i class="fa fa-play margin-right-20" aria-hidden="true"></i>PLAY TRAILER</button>
+                <button class="button play-button margin-top-50" id="play-button">
+                    <i class="fa fa-play margin-right-20" aria-hidden="true"></i> PLAY TRAILER
+                </button>
             </div>
         </div>
         <div class="text-center down-button">
@@ -65,7 +71,7 @@
             </a>
         </div>
     </section>
-    <section class="cast" id="cast">
+    <section class="cast margin-top-50" id="cast">
         <div class="container">
             <header>
                 <h3 class="text-bold">CAST & CREW</h3>
@@ -96,7 +102,7 @@
                 </div>
                 <div class="cast-team">
                     <ul>
-                        <li >CAST</li>
+                        <li>CAST</li>
                         <li class="text-grey">CREW</li>
                     </ul>
                 </div>
@@ -125,9 +131,8 @@
                     </p>
                     <p>
                         The movie very closely matches how We Were Soldiers Once... And Young described the battle. In fact
-                        <span
-                            class="text-white">Harold G. Moore</span>, The author of We Were Soldiers Once... And Young, described the movie as
-                            the only one to "get it right". This made the film very realistic and historically accurate.
+                        <span class="text-white">Harold G. Moore</span>, The author of We Were Soldiers Once... And Young, described the movie as
+                        the only one to "get it right". This made the film very realistic and historically accurate.
                     </p>
                 </div>
                 <div class="four columns story-images">
