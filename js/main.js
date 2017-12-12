@@ -15,7 +15,6 @@
     // video
     let video = document.getElementById('top-video');
     let image = document.getElementById('bg-image');
-    video.style.display = "none";
     document.getElementById('play-button').addEventListener('click', (e) => {
       if(video.paused){
         image.style.display = "none";
